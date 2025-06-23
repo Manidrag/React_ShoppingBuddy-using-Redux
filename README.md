@@ -57,7 +57,7 @@ src/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/manidrag/h
+   git clone https://github.com/Manidrag/React_ShoppingBuddy-using-Redux
    cd shoppyglobe
    ```
 
@@ -70,15 +70,13 @@ src/
 
 3. **Start the development server:**
    ```bash
-   npm start
+   npm run dev
    # or
    yarn start
    ```
 
 4. **Open in your browser:**
-   ```
-   http://localhost:3000
-   ```
+
 
 ---
 
@@ -115,31 +113,11 @@ src/
 
 ---
 
-## 🧪 Testing
 
-> _You can add unit and integration tests using Jest and React Testing Library. (Not included by default in this template.)_
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
-
----
-
-## 📸 Screenshots
-
-> _Add screenshots of your app here for better presentation!_
-
----
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is belong to Manish Krishna Joshi.
 
 ---
 
