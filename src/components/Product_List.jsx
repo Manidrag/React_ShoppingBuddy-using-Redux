@@ -32,7 +32,7 @@ export default function ProductList() {
     
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 py-8 px-2">
+      <div className="min-h-screen  py-8 px-2">
         <div className="flex flex-col items-center justify-center mb-8">
           <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 drop-shadow-lg animate-fade-in-up">
             Welcome to <span className="underline decoration-wavy decoration-pink-400">Our Store</span>

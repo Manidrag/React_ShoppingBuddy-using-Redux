@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux"
+import { useSelector,useDispatch } from "react-redux"
 import CartItems from "./CartItems";
 
 
@@ -6,10 +6,16 @@ export default function Cart() {
   const cartItems = useSelector((state) => state.cart.cartItems)
   const totalAmount = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity,0);
+  const dispatch=useDispatch();
   const handleCheckout = () => {
     // Handle checkout logic here
     alert("Proceeding to checkout!");
   };
+  const clearCart=()=>{
+   if(confirm("Do You really want ClearCart?"))
+     dispatch({type:"cart/clearCart"})
+  
+  }
   return (
  
     <div className="max-w-2xl mx-auto mt-10 bg-white rounded-2xl shadow-lg p-8">
@@ -35,6 +41,7 @@ export default function Cart() {
       </div>
       {cartItems.length > 0 && (
         <div className="mt-6 text-center">
+          <button onClick={clearCart} className="bg-gradient-to-r from-blue-500 to-green-400 text-white px-6 py-3 rounded-full shadow hover:from-blue-600 hover:to-green-500 transition-all duration-300 font-semibold m-2">Clear Cart</button>
           <button onClick={handleCheckout} className="bg-gradient-to-r from-blue-500 to-green-400 text-white px-6 py-3 rounded-full shadow hover:from-blue-600 hover:to-green-500 transition-all duration-300 font-semibold">
             Proceed to Checkout
           </button>
